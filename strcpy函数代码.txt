@@ -1,14 +1,14 @@
 char* StrCpy(char* src)
 {
+char* ptr=src;
 int len=0;
-len=strlen(src);
-char *p=NULL;
-p=(char *)malloc(sizeof(char)*(len+1));
+len=strlen(ptr);
+char *p=(char *)malloc(sizeof(char)*(len+1));
 for(int i=0;i<len:i++)
 {
-p[i]=src[i];
+p[i]=ptr[i];
 }
-p[len]='\0';
+p[len]=0;
 return p;
 }
 
