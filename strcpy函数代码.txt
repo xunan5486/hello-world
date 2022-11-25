@@ -1,6 +1,6 @@
 char* StrCpy(char* src)
 {
-int len;
+int len=0;
 len=strlen(src);
 char *p=NULL;
 p=(char *)malloc(sizeof(char)*(len+1));
